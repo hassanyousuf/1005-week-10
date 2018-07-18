@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Video Demo</title>
+<style>	
+.hideMe { display:none; }
+.controls { margin-bottom:15px; }
+</style>
+</head>
+
+<body>
+<video id="myVideo" controls> <!-- only autoplay with muted property -->
+	<source src="video/JebCorliss.mp4" type="video/mp4"/>
+    <source src="video/JebCorliss.webm" type="video/webm"/>
+    <source src="video/JebCorliss.ogv" type="video/ogg"/>
+</video>
+<section>
+	<button id="JebCorliss" class="vidLoader">vid 1</button>
+	<button id="movie2" class="vidLoader">vid 2</button>
+	<button id="movie3" class="vidLoader">vid 3</button>
+</section>
+
+<div class="controls hideMe">
+	<input type="button" class="pPause" value="Play">
+	<button id="volDown">Vol Down</button>
+	<button id="volUp">Vol Up</button>
+	<button id="volMute">Mute</button>
+</div>
+<script src="js/scripts.js"></script>
+</body>
+</html>
